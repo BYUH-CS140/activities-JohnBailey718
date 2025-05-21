@@ -1,0 +1,19 @@
+body {
+    background-image: url('images/txBkgrd.jpg');  /* replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.custom-bullets {
+    list-style-image: url('images/txBPT.webp'); /* replace with your bullet image path */
+     padding-left: 40px; /* ensures spacing for the image */
+}
+
+/* Optional: fallback if list-style-image doesn't work well */
+.custom-bullets li {
+    margin-bottom: 10px;
+}
