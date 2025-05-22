@@ -1,8 +1,32 @@
- body{
-            background-color: #ac9fed;
+body {
+    background-color: #ac9fed;
+    margin: 0;
+    font-family: sans-serif;
+}
 
-        }
-h1{
-            color: #992222; text-align: center;
+h1 {
+    color: #992222;
+    text-align: center;
+}
 
+h2 {
+    text-align: center;
+    color: #450f0f;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.dog-image {
+    width: 425px;
+    height: 640px;
+    border-radius: 150px;
+    box-shadow: 5px 5px 15px grey;
+    border: 3px solid black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
