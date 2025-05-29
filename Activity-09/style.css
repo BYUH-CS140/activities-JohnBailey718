@@ -1,0 +1,28 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Makes list items align horizontally */
+  background-color: #333;
+}
+
+/* Remove display: flex from li! */
+.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the anchor tags inside the nav */
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.menu a:hover {
+  background-color: #960d0d;
+}
