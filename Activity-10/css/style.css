@@ -1,7 +1,7 @@
 body {
   background-color: forestgreen; /*Missing - inbetween background and color*/
   margin: 0;
-  font-family: 'Gill Sans'; /* incorrect spelling of gill and missing ''*/
+  font-family: 'Gil Sans'; /* incorrect spelling of gill and missing ''*/
 }
 
 header h1 {
