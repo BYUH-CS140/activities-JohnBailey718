@@ -1,0 +1,129 @@
+/* Base (Mobile-First) Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: block;
+    /* Overridden at desktop breakpoint */
+}
+
+nav,
+header,
+main,
+footer {
+    padding: 1em;
+}
+
+nav {
+    background: #005a99;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: #007acc;
+    color: white;
+    text-align: center;
+}
+
+section {
+    margin: 1em 0;
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1em;
+}
+
+/* Gallery Grid - Mobile First: 1 image/row */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Tablet Breakpoint (≥768px): 2 images/row */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.1em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        margin-left: 1em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop Breakpoint (≥1024px) */
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 1.2em;
+        gap: 1em;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    header {
+        grid-area: header;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
