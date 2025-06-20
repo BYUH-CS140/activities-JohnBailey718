@@ -1,0 +1,122 @@
+/* Base styles for mobile */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    color: #de5c81;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Image Section (mobile full screen) */
+.image-section {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+    border-radius: 0;
+}
+
+/* Main content (not used in current HTML, but ready for future) */
+.main-content {
+    display: block;
+    padding: 15px;
+    background-color: #5d4848;
+}
+
+.column {
+    width: 100%;
+    background: rgb(97, 3, 75);
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .column {
+        width: 48%;
+        margin-bottom: 0;
+    }
+}
+
+/* Desktops (1024px and up) */
+@media (min-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .main-content {
+        padding: 20px 40px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
