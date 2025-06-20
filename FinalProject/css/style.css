@@ -42,11 +42,22 @@ nav a:hover {
 
 /* Image Section (mobile full screen) */
 .image-section {
-    padding: 0;
-    margin: 0;
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-box {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 .image-section img {
@@ -58,7 +69,7 @@ nav a:hover {
     border-radius: 0;
 }
 
-/* Main content (not used in current HTML, but ready for future) */
+/* Main content */
 .main-content {
     display: block;
     padding: 15px;
